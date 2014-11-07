@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ﻿/* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
-=======
-/* ! normalize.css v1.0.0 | MIT License | git.io/normalize */
->>>>>>> 4e3e8b50425e75c9498257a9e137cd50771aa55f
  
 /* ==========================================================================
 HTML5 display definitions
@@ -26,10 +22,7 @@ Fonts
 @font-face{	font-family: Caviar Dreams;src:url(../fonts/CaviarDreams.ttf);}
 @font-face{	font-family: Caviar Dreams Bold;src:url(../fonts/CaviarDreams_Bold.ttf);}
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 4e3e8b50425e75c9498257a9e137cd50771aa55f
 /* ==========================================================================
 Base
 ========================================================================== */
@@ -203,7 +196,7 @@ User Styles
 	vertical-align: middle;
 }
 #appcontainer h3{
-	/*font-family: Caviar Dreams Bold;*/
+	font-family: Caviar Dreams Bold;
 	font-size: 48px;
 	font-weight: 800;
 	color: #b20000;
@@ -218,7 +211,6 @@ User Styles
 #appcontainer h3 span span{
 	letter-spacing: 0px;
 }
-<<<<<<< HEAD
 
 
 
@@ -233,5 +225,3 @@ User Styles
 
 
 
-=======
->>>>>>> 4e3e8b50425e75c9498257a9e137cd50771aa55f
