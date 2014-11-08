@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1;maximum-scale=1.0; user-scalable=0;">
+		<title>URGENCE MOBILE | Accueil</title>
+		<!--CSS-->
+		<link href="css/styles.css?v=1.2" rel="stylesheet">
+		<link href="css/queries.css?v=1.2" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<!--JS & JQuery-->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		
+	</head>
+	
+	<body>
+		<header class="header">
+			<nav class="navbar navbar-static-top" role="navigation">
+				<div class="navbar-main">
+					<!-- Sidebar toggle button -->
+					<a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<!-- App Name Logo -->
+					<a href="index.html" class="logo">
+					<!-- Add the class icon to your logo image or logo icon to add the margining -->
+						URGENCE<br><span>MOBIL<span class="no_spacing">E</span></span>
+					</a>
+				</div>
+				<div class="navbar-container">
+                    <ul class="nav navbar-nav">
+                        <!-- Home -->
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-home"></i>
+                            </a>
+                        </li>
+                        <!-- Profile -->
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </li>
+                        <!-- Settings -->
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-cog"></i>
+                            </a>
+						</li>
+					</ul>
+                </div>
+				<div class="navbar-bottom-border"></div>
+				<script>
+					$(".navbar-btn").click(function(){
+						$(".navbar-container").slideToggle("slow");
+					});
+				</script>
+			</nav>			
+		</header>
+	<body>
+</html>
