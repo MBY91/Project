@@ -191,7 +191,7 @@ User Styles
 #appcontainer h3 span{	font-size: 36px;color: #353535;letter-spacing: 17px;}
 #appcontainer h3 span span{	letter-spacing: 0px;}
 /*====== User Styles ======*/
-body > .header { position: relative;max-height: 100px;z-index: 1030;}
+body > .header { position: relative;max-height: 100px;margin-bottom: 25px;z-index: 1030;}
 body > .header .navbar { margin: 0;width: 100%;float: none;position: relative!important;height: 50px;text-align: center;background-color: #b20000;}
 body > .header .navbar a,body > .header .navbar i { color: #fff;}
 body > .header .navbar .navbar-main{ min-height: 50px;}
@@ -205,8 +205,17 @@ body > .header .logo span{ font-size: 18px;letter-spacing: 8.75px;}
 body > .header .logo span.no_spacing{ letter-spacing: 0px;}
 body > .header .navbar .navbar-container { display: none;width: 100%;height: inherit;text-align: center;background-color: #b20000;}
 body > .header .navbar .navbar-bottom-border{ width: 100%;height: 5px;background-color: #fff;box-shadow: 0 2px 6px #444;}
-
-
+body > .main { margin-bottom: 20px;}
+	/*=== Home Page ===*/
+	.square { background-color:#b20000;}
+	.square .content { position: absolute;left: 0;height: 100%;width: 100%;padding: 0;}
+	.content.square-link{ display: block;width: 100%;height: 100%;padding: 0;margin: 0;}
+	.table { display: table;width: 100%;height: 100%;}
+	.table-cell { display: table-cell;vertical-align: middle;text-align: center;font-family: Caviar Dreams Bold;font-size: 20px;color: #fff;line-height: 20px;}
+	.table-cell img { width:35%;margin: auto;display:block;margin-bottom:10%;}
+	
+	/*=== Emergency Numbers ===*/
+	.emergency-numbers .table-cell img { width:30%;margin: auto;display: block;margin: 6% auto;position: relative;top: 32%;}
 
 
 
