@@ -207,9 +207,9 @@ body > .header .navbar .navbar-container { display: none;width: 100%;height: inh
 body > .header .navbar .navbar-bottom-border{ width: 100%;height: 5px;background-color: #fff;box-shadow: 0 2px 6px #444;}
 body > .main { margin-bottom: 20px;}
 	/*=== Home Page ===*/
-	.square { background-color:#b20000;}
 	.square .content { position: absolute;left: 0;height: 100%;width: 100%;padding: 0;}
-	.content.square-link{ display: block;width: 100%;height: 100%;padding: 0;margin: 0;}
+	.content .square-link{ display: block;width: 100%;height: 100%;padding: 0;margin: 0;background-color: #b20000;}
+	.content .square-link:hover,.content .square-link:focus { background-color: #900000;}
 	.table { display: table;width: 100%;height: 100%;}
 	.table-cell { display: table-cell;vertical-align: middle;text-align: center;font-family: Caviar Dreams Bold;font-size: 20px;color: #fff;line-height: 20px;}
 	.table-cell img { width:35%;margin: auto;display:block;margin-bottom:10%;}
