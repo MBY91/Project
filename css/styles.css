@@ -213,12 +213,30 @@ body > .main { margin-bottom: 20px;}
 	.table { display: table;width: 100%;height: 100%;}
 	.table-cell { display: table-cell;vertical-align: middle;text-align: center;font-family: Caviar Dreams Bold;font-size: 20px;color: #fff;line-height: 20px;}
 	.table-cell img { width:35%;margin: auto;display:block;margin-bottom:10%;}
+	.table-cell span { letter-spacing: -1px;}
 	
 	/*=== Emergency Numbers ===*/
 	.emergency-numbers .table-cell img { width:30%;margin: auto;display: block;margin: 6% auto;position: relative;top: 32%;}
-
-
-
+		/*== Popup ==*/
+		#fade { display: none;background: #000;position: fixed; left: 0; top: 0;	width: 100%; height: 100%;opacity: .80;z-index: 9999;}
+		.popup_block{ display: none;width: 90%;height: 90%;background: #fff;padding: 10px;border: 10px solid #b20000;float: left;font-family: Caviar Dreams Bold;position: fixed;top: 50%; left: 50%;z-index: 99999;-webkit-box-shadow: 0px 0px 20px #000;-moz-box-shadow: 0px 0px 20px #000;box-shadow: 0px 0px 20px #000;}
+		.popup_block .close { margin: -30px -30px 0 0;padding: 4px 10px 8px 10px;background: #555;color: #fff;opacity: 1;}
+		.popup_block .close:hover, .popup_block .close:focus { color: #fff;opacity: 1;}
+		.popup_block .main_block{ height: 83%;position: relative;overflow: hidden;}
+		.popup_block .main_block .procedures{ position: absolute;left: 0;font-size: 15px;letter-spacing: -0.25px;line-height: normal;width: 100%;height: 100%;z-index: 10;overflow:scroll;}
+		/*.popup_block .main_block .geolocation{ height: 75%;width: 100%;position: relative;bottom: -100%;z-index: 20;display: block;background: #DDD;}*/
+		.popup_block .main_block .geolocation{ height: 80%;width: 100%;position: absolute;bottom: 0;z-index: 20;display: none;background: #DDD;box-shadow: 0px -5px 15px #fff;}
+		.popup_block .buttons_block{ height: 17%;}
+		.box .content { position: absolute;left: 0;height: 100%;width: 100%;padding: 0;}
+		.content .box-link{ display: block;width: 100%;height: 100%;padding: 0;margin: 0;background-color: #b20000;}
+		.content .box-link.btn-call{ background-color: #6ba600;}
+		.content .box-link:hover,.content .box-link:focus { background-color: #900000;}
+		.content .box-link.btn-call:hover,.content .box-link.btn-call:focus { background-color: #4f7a00;}
+		.content .box-link .table-cell { font-size: 14px;}
+		.btn-call .table-cell img { width: 30%;display: inline-block;margin-right:5%;}
+		.btn-call .table-cell span { font-size: 18px;}
+		
+		
 
 
 

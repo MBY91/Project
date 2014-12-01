@@ -1452,6 +1452,7 @@ pre code {
   width: 50%;
 }
 .col-xs-6.square{ width: 45%;padding-bottom: 45%;margin: 2.5%;}
+.col-xs-6.box{ width: 46%;height: 100%;margin: 2%;padding: 0;}
 .col-xs-5 {
   width: 41.66666667%;
 }
@@ -3931,8 +3932,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   display: inline-block;
 }
 .navbar-nav > li > a {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   line-height: 20px;
 }
 @media (max-width: 767px) {
@@ -3968,8 +3969,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   .navbar-nav.navbar-right:last-child {
     margin-right: -15px;
