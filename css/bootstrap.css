@@ -1452,7 +1452,7 @@ pre code {
   width: 50%;
 }
 .col-xs-6.square{ width: 45%;padding-bottom: 45%;margin: 2.5%;}
-.col-xs-6.box{ width: 46%;height: 100%;margin: 2%;padding: 0;}
+.col-xs-6.box{ width: 49%;height: 100%;margin: .5%;padding: 0;}
 .col-xs-5 {
   width: 41.66666667%;
 }

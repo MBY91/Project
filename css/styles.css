@@ -233,7 +233,7 @@ body > .main { margin-bottom: 20px;}
 		.content .box-link:hover,.content .box-link:focus { background-color: #900000;}
 		.content .box-link.btn-call:hover,.content .box-link.btn-call:focus { background-color: #4f7a00;}
 		.content .box-link .table-cell { font-size: 14px;}
-		.btn-call .table-cell img { width: 30%;display: inline-block;margin-right:5%;}
+		.btn-call .table-cell img { height: 30%;width: auto;display: inline-block;margin: auto;margin-right: 5%;}
 		.btn-call .table-cell span { font-size: 18px;}
 		
 		

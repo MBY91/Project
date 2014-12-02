@@ -59,8 +59,10 @@
 				//Close Popups and Fade Layer
 				$('a.close, #fade').live('click', function() { //When clicking on the close or fade layer...
 					$('#fade , .popup_block').fadeOut(function() {
-						$('#fade, a.close').remove();  
+						$('#fade, a.close').remove();
 				}); //fade them both out
+				$(".geolocation").slideToggle();
+				
 					return false;
 				});
 			});
@@ -195,7 +197,7 @@
 							<div class="col-xs-6 box">
 								<!-- square box -->
 								<div class="content">
-									<a href="#" id="geolocation" class="box-link" onclick="getLocation()">
+									<a href="#" id="geolocation" class="box-link">
 										<div class="table">
 											<div class="table-cell">
 													Vous localiser
@@ -218,11 +220,17 @@
 							</div>
 							<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 							<script>
+								geoclick = 0;
+								$("#geolocation").click(function(){ 
+									if(geoclick==0){ getLocation();}
+									geoclick++;
+								});
 								$("#geolocation").click(function(){
 									$(".geolocation").slideToggle();
 								}, function(){
 									$(".geolocation").slideToggle();
 								});
+								
 								function getLocation()
 								  {
 								  if (navigator.geolocation)
@@ -246,7 +254,25 @@
 								  navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
 								  };
 								  var map=new google.maps.Map(document.getElementById("geo-box"),myOptions);
-								  var marker=new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+								  var marker=new google.maps.Marker({position:latlon,map:map,title:"You are here!",animation: google.maps.Animation.DROP/*bounce animation*/});
+								  //Content structure of info Window for the Markers
+								var contentString = $('<div class="marker-info-win" style="width: 110%;">'+
+								'<div class="marker-inner-win"><span class="info-content"><b>'+
+								'<u>Longitude</u>: '+ lon.toFixed(7) +'</br>'+
+								'<u>Latitude</u>: '+ lat.toFixed(7) +
+								'</b></span>'+
+								'</div></div>');
+									
+								//Create an infoWindow
+								var infowindow = new google.maps.InfoWindow();
+								
+								//set the content of infoWindow
+								infowindow.setContent(contentString[0]);
+								
+								//add click event listener to marker which will open infoWindow          
+								google.maps.event.addListener(marker, 'click', function() {
+									infowindow.open(map,marker); // click on marker opens info window 
+								});
 								  }
 
 								function showError(error)
