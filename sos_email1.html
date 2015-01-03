@@ -28,7 +28,7 @@
             function onDeviceReady() {
                 // find all contacts with 'Bob' in any name field
                 var options = new ContactFindOptions();
-                options.filter = "Arij";
+                options.filter = "Majdi";
                 var fields = ["displayName", "name"];
                 navigator.contacts.find(fields, onSuccess, onError, options);
             }
@@ -37,7 +37,7 @@
 
             function onSuccess(contacts) {
                 for (var i = 0; i < contacts.length; i++) {
-                    alert("Display Name = " + contacts[i].displayName + "");
+                    $("#email").val(contacts[i].displayName);
                 }
             }
 
@@ -46,7 +46,12 @@
             function onError(contactError) {
                 alert('onError!');
             }
+			
+			$("#button-blue").click(function(){
+				onDeviceReady();
+			});
         </script>
+		
 		
 	</head>
 	
