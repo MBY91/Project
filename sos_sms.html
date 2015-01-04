@@ -15,43 +15,10 @@
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]<script type="text/javascript" src="js/cordova.js"></script>-->
+		<![endif]-->
 		<!--JS & JQuery-->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" charset="utf-8" src="js/android/cordova.js"></script>
-        <script type="text/javascript" charset="utf-8">
-
-            // Wait for device API libraries to load
-            document.addEventListener("deviceready", onDeviceReady, false);
-
-            // device APIs are available
-            function onDeviceReady() {
-                // find all contacts with 'Bob' in any name field
-                var options = new ContactFindOptions();
-                options.filter = "Majdi";
-                var fields = ["displayName", "name"];
-                navigator.contacts.find(fields, onSuccess, onError, options);
-            }
-
-            // onSuccess: Get a snapshot of the current contacts
-
-            function onSuccess(contacts) {
-                for (var i = 0; i < contacts.length; i++) {
-                    $("#email").val(contacts[i].displayName);
-                }
-            }
-
-            // onError: Failed to get the contacts
-
-            function onError(contactError) {
-                alert('onError!');
-            }
-			
-			$("#button-blue").click(function(){
-				onDeviceReady();
-			});
-        </script>
-		
+		<script type="text/javascript" src="js/contacts.min.js"></script>
 		
 	</head>
 	
@@ -113,9 +80,9 @@
 								<p class="name">
 									<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Votre Nom" id="name" />
 								</p>
-
-								<p class="email">
-									<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Votre E-mail" />
+								
+								<p class="phone">
+									<input name="phone" type="text" class="validate[required] feedback-input phone" id="phone" placeholder="N° Destinaire" />
 								</p>
 
 								<p class="text">
@@ -124,10 +91,9 @@
 
 
 								<div class="submit">
-									<input type="submit" value="ENVOYER" id="button-blue"/>
+									<a href="sms:20672681?body=Hello" id="button-blue">ENVOYER</a>
 									<div class="ease"></div>
 								</div>
-							
 							</form>
 						</div>
 					</div>

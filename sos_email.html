@@ -9,6 +9,7 @@
 		<link href="css/styles.css?v=1.2" rel="stylesheet">
 		<link href="css/queries.css?v=1.2" rel="stylesheet">
 		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/forms.css" rel="stylesheet">
 		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -17,6 +18,7 @@
 		<![endif]-->
 		<!--JS & JQuery-->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/contacts.min.js"></script>
 		
 	</head>
 	
@@ -71,33 +73,35 @@
 			<div class="container">
 				<div class="row">
 					<!-- Main Menu -->
-					<div class="col-xs-6 square">
-						<!-- square box -->
-						<div class="content">
-							<a href="sos_sms.html" class="square-link">
-								<div class="table">
-									<div class="table-cell numbers">
-											<img src="img/icon-3.PNG"/>
-											SMS
-									</div>
+					<div id="form-main">
+						<div id="form-div">
+							<form class="form" id="form1" method="GET" action="http://127.0.0.1/submit_contact.php">
+
+								<p class="name">
+									<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Votre Nom" id="name" />
+								</p>
+
+								<p class="email">
+									<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Votre E-mail" />
+								</p>
+								
+								<p class="email">
+									<input name="emaild" type="text" class="validate[required,custom[email]] feedback-input" id="emaild" placeholder="E-mail Destination" />
+								</p>
+
+								<p class="text">
+									<textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Message"></textarea>
+								</p>
+
+
+								<div class="submit">
+									<input type="submit" value="ENVOYER" id="button-blue"/>
+									<div class="ease"></div>
 								</div>
-							</a>
+							
+							</form>
 						</div>
 					</div>
-					<div class="col-xs-6 square">
-						<!-- square box -->
-						<div class="content">
-							<a href="sos_email.html" class="square-link">
-								<div class="table">
-									<div class="table-cell numbers">
-											<img src="img/icon-4.PNG"/>
-											E-mail
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-					
 				</div>
 			</div>
 		</section>
